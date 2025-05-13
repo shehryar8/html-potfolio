@@ -1,0 +1,58 @@
+#Hero {
+  background: linear-gradient(120deg, #1f2937, #4b5563);
+  color: white;
+}
+
+.btn-light {
+  background-color: #facc15;
+}
+
+#Features,
+#Pricing,
+#Testimonials,
+#cta {
+  padding: 60px 20px;
+}
+
+#Features .icon {
+  font-size: 3rem;
+  color: #facc15; /* Soft Gold */
+  margin-bottom: 15px;
+}
+#Testimonials {
+  background-color: #f3f4f6;
+}
+
+#cta {
+  background-color: #1f2937;
+  color: white;
+}
+
+#footer {
+  background-color: #111827;
+  color: white;
+}
+.testimonial {
+  margin-bottom: 30px;
+}
+.card {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.btn-success,
+.btn-dark,
+.btn-outline-success {
+  background-color: #6b7280;
+  border-color: #6b7280;
+}
+.btn-success:hover,
+.btn-dark:hover,
+.btn-outline-success:hover {
+  background-color: #4b5563;
+  border-color: #4b5563;
+}
+.btn-light {
+  background-color: #facc15;
+  color: #1f2937;
+}
