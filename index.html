@@ -1,123 +1,129 @@
-<!-- TODO 1: Create the HTML Boilerplate -->
-
-<!-- TODO 2: Add Your previous projects' HTML into the public folder -->
-
-<!-- TODO 3: Take screenshots of your project previews and add the images to the images folder -->
-
-<!-- TODO 4: Add titles/subtitles etc. -->
-
-<!-- TODO 5: Add a link to the project pages -->
-
-<!-- TODO 6: Add images to show the project previews
-HINT for TODO 6: You can use the height attribute set to 200 to make the image smaller:
-https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img#attr-height -->
-
-<!-- TODO 7: Add the Contact Me and About Me page links -->
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Shehryar Khan | Developer Portfolio</title>
-    <style>
-        body {
-          font-family: Arial, sans-serif;
-          background-color: #f4f4f4;
-          color: #333;
-          margin: 0;
-          padding: 20px;
-        }
-        header {
-          background-color: #1e1e2f;
-          color: white;
-          padding: 40px 20px;
-          text-align: center;
-        }
-        h1 {
-          margin: 0;
-          font-size: 2.5em;
-        }
-        h2 {
-          color: #1e1e2f;
-        }
-        section {
-          margin: 40px auto;
-          max-width: 800px;
-        }
-        a.button {
-          display: inline-block;
-          margin-top: 20px;
-          padding: 10px 20px;
-          background-color: #1e1e2f;
-          color: white;
-          text-decoration: none;
-          border-radius: 5px;
-        }
-        a.button:hover {
-          background-color: #343454;
-        }
-        .contact a {
-          color: #1e1e2f;
-          text-decoration: none;
-        }
-        .contact a:hover {
-          text-decoration: underline;
-        }
-        footer {
-          text-align: center;
-          margin-top: 60px;
-          font-size: 0.9em;
-          color: #666;
-        }
-      </style>
-    </head>
-    <body>
-    
-      <header>
-        <h1>Shehryar Khan</h1>
-        <p>Aspiring Software Developer | Based in Houston, TX</p>
-      </header>
-    
-      <section>
-        <h2>About Me</h2>
-        <p>
-            Hello! I'm Shehryar Khan, a tech professional with a Bachelor's degree in Computer Science and a career
-            in both client-facing project coordination and software development. I’ve worked as an <strong>Account Coordinator</strong>,
-            managing communication, workflows, and project delivery, while simultaneously building my technical skills in
-            <strong>Java, C++, Python, JavaScript, HTML, CSS, React, and Node.js</strong>.
-          </p>
-          <p>
-            With my foundation in programming and my experience managing cross-functional teams, I bring a unique perspective
-            to software development. I’m passionate about solving problems, building user-friendly applications, and leveraging
-            both my technical and organizational strengths.
-          </p>
-          <p>
-            Whether working on full-stack web applications, backend systems, or software solutions, I’m always looking for new
-            challenges and opportunities to grow.
-          </p>
-      </section>
-    
-      <section>
-        <h2>Resume</h2>
-        <p>
-          You can view or download my resume by clicking the button below:
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./CSS/style.css" />
+  </head>
+
+  <body>
+    <!-- Hero Section -->
+    <header class="hero text-white text-center">
+      <div class="container">
+        <h1 class="hero-title">Shehryar Khan</h1>
+        <p class="hero-subtitle">
+          Aspiring Software Developer | Based in Houston, TX
         </p>
-        <a href="./public/resume.html" class="button" target="_blank" >View My Resume</a>
-      </section>
-    
-      <section>
-        <h2>Contact</h2>
-        <p class="contact">
-          📧 Email: <a href="mailto:khanshehryar13@gmail.com">khanshehryar13@gmail.com</a><br />
-          💼 LinkedIn: <a href="https://www.linkedin.com/in/shehryar-khan-196a6174/" target="_blank">linkedin.com/in/shehryar-khan-196a6174/</a>
+      </div>
+    </header>
+
+    <main class="container my-5">
+      <!-- About Me Section -->
+      <section class="mb-5">
+        <h2 class="mb-3">About Me</h2>
+        <p>
+          Hello! I'm Shehryar Khan, a tech professional with a Bachelor's degree
+          in Computer Science and a career in both client-facing project
+          coordination and software development. I’ve worked as an
+          <strong>Account Coordinator</strong>, managing communication,
+          workflows, and project delivery, while simultaneously building my
+          technical skills in
+          <strong
+            >Java, C++, Python, JavaScript, HTML, CSS, React, and
+            Node.js</strong
+          >.
+        </p>
+        <p>
+          With my foundation in programming and my experience managing
+          cross-functional teams, I bring a unique perspective to software
+          development. I’m passionate about solving problems, building
+          user-friendly applications, and leveraging both my technical and
+          organizational strengths.
+        </p>
+        <p>
+          Whether working on full-stack web applications, backend systems, or
+          software solutions, I’m always looking for new challenges and
+          opportunities to grow.
         </p>
       </section>
-    
-      <footer>
-        &copy; 2025 Shehryar Khan | All rights reserved.
-      </footer>
-    
-    </body>
-  </html>
+
+      <!-- Resume Section -->
+      <section class="mb-5">
+        <h2 class="mb-3">Resume</h2>
+        <p>You can view my resume by clicking the button below:</p>
+        <a
+          href="./public/resume.html"
+          class="btn resume-btn text-dark fw-bold"
+          target="_blank"
+          >View My Resume</a
+        >
+      </section>
+
+      <!-- Projects Section -->
+      <section class="mb-5">
+        <h2 class="mb-4">Projects</h2>
+        <div class="row g-4">
+          <div class="col-lg-4 col-md-6 col-sm-12">
+            <div class="card h-100 shadow-sm border-0">
+              <img
+                src="./assets/images/pulsePartner.png"
+                class="card-img-top"
+                alt="PulsePartner App Preview"
+                style="height: 200px; object-fit: cover"
+              />
+              <div class="card-body d-flex flex-column">
+                <h5 class="card-title">PulsePartner</h5>
+                <p class="card-text">
+                  PulsePartner connects fitness lovers with local workout
+                  partners. Features smart matching, motivation tools, and
+                  real-time scheduling.
+                </p>
+                <a
+                  href="./public/PulsePartner.html"
+                  class="btn project-btn mt-auto"
+                  target="_blank"
+                  >View Project</a
+                >
+              </div>
+            </div>
+          </div>
+          <!-- Add more projects here following the same column/card structure -->
+        </div>
+      </section>
+
+      <!-- Contact Section -->
+      <section class="mb-5">
+        <h2 class="mb-3">Contact</h2>
+        <p>
+          📧 Email:
+          <a href="mailto:khanshehryar13@gmail.com">khanshehryar13@gmail.com</a
+          ><br />
+          💼 LinkedIn:
+          <a
+            href="https://www.linkedin.com/in/shehryar-khan-196a6174/"
+            target="_blank"
+            >linkedin.com/in/shehryar-khan-196a6174/</a
+          >
+        </p>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-white text-center py-4">
+      <p class="mb-0">&copy; 2025 Shehryar Khan | All rights reserved.</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </body>
 </html>
