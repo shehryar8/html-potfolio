@@ -4,211 +4,307 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Shehryar Khan | Resume</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
     <style>
+      /* General Styles */
       body {
-        font-family: Arial, sans-serif;
-        background-color: #f4f4f4;
-        margin: 0;
-        padding: 20px;
-        color: #333;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        background-color: #f8f9fa; /* Soft light gray background */
+        color: #333; /* Dark text for readability */
+        transition: background-color 0.3s ease, color 0.3s ease;
       }
+
+      /* Hero Section */
       header {
-        background-color: #1e1e2f;
-        color: white;
-        padding: 20px;
+        background: linear-gradient(
+          145deg,
+          #2d6a4f,
+          #1e4d38
+        ); /* Deep emerald green gradient */
+        padding: 100px 0;
         text-align: center;
+        color: white;
       }
-      h1 {
-        margin: 0;
-        font-size: 2.5em;
+
+      header img {
+        width: 125px;
+        height: 125px;
+        border-radius: 50%;
+        object-fit: cover;
+        border: 3px solid white;
+        margin-bottom: 15px;
       }
+
+      header h1 {
+        font-size: 50px;
+        font-weight: bold;
+        color: #ffffff; /* White text for hero title */
+      }
+
+      header p {
+        font-size: 22px;
+        color: #d4af37; /* Muted gold subtitle color */
+      }
+
+      /* Sections */
       h2 {
-        color: #1e1e2f;
+        font-size: 32px;
+        margin-bottom: 20px;
+        color: #2d6a4f; /* Deep emerald green for headings */
       }
-      section {
-        margin-top: 20px;
+
+      p {
+        font-size: 18px;
+        line-height: 1.6;
+        color: #555; /* Softer gray text for body */
       }
+
+      /* Button Styles */
+      .btn {
+        padding: 10px 20px;
+        font-size: 16px;
+        border-radius: 5px;
+        transition: background-color 0.3s ease, transform 0.2s ease;
+      }
+
+      .btn:hover {
+        transform: scale(1.05);
+      }
+
+      .resume-btn {
+        background-color: #d4af37; /* Muted gold for resume button */
+        color: white;
+      }
+
+      .resume-btn:hover {
+        background-color: #c89b31; /* Slightly darker gold for hover */
+      }
+
+      .project-btn {
+        background-color: #2d6a4f; /* Emerald green for project button */
+        color: white;
+      }
+
+      .project-btn:hover {
+        background-color: #1e4d38; /* Darker emerald green on hover */
+      }
+
+      /* Content Section Styling */
       .content-section {
-        margin: 20px 0;
+        margin-bottom: 30px;
       }
-      .skills ul,
-      .experience ul,
-      .education ul,
-      .projects ul {
-        padding-left: 20px; /* Keeps the default bullets */
+
+      .content-section ul {
+        padding-left: 20px;
       }
-      .skills li,
-      .experience li,
-      .education li,
-      .projects li {
+
+      .content-section ul li {
         margin: 8px 0;
       }
+
+      /* Contact Section */
+      .contact a {
+        color: #2d6a4f; /* Emerald green for links */
+        text-decoration: none;
+      }
+
+      .contact a:hover {
+        text-decoration: underline;
+      }
+
+      /* Footer */
       footer {
+        background-color: #f8f9fa; /* Light background for footer */
+        padding: 20px;
         text-align: center;
-        margin-top: 40px;
-        font-size: 0.9em;
-        color: #666;
+        color: #333;
+        border-top: 1px solid #d4af37; /* Gold border for footer */
+      }
+
+      footer p {
+        color: #333;
+      }
+
+      /* Navbar */
+      .navbar {
+        background-color: #ffffff; /* White navbar for clean look */
+        border-bottom: 1px solid #d4af37; /* Gold divider for navbar */
+      }
+
+      .navbar .navbar-brand {
+        color: #2d6a4f; /* Emerald green for navbar brand */
+      }
+
+      .navbar .navbar-nav .nav-link {
+        color: #333; /* Dark links for readability */
+      }
+
+      .navbar .navbar-nav .nav-link:hover {
+        color: #d4af37; /* Muted gold for hover */
       }
     </style>
   </head>
+
   <body>
     <header>
       <img
         src="../assets/images/profile.jpg"
         alt="Shehryar Khan profile picture"
-        style="
-          width: 125px;
-          height: 125px;
-          border-radius: 50%;
-          object-fit: cover;
-          border: 3px solid white;
-          margin-bottom: 10px;
-        "
       />
       <h1>Shehryar Khan</h1>
       <p>Software Developer | Problem Solver | Full-Stack Developer</p>
     </header>
 
-    <section class="content-section">
-      <h2>Contact Information</h2>
-      <p>Phone: (832) 490-8607</p>
-      <p>
-        Email:
-        <a href="mailto:khanshehryar13@gmail.com">khanshehryar13@gmail.com</a>
-      </p>
-      <p>
-        LinkedIn:
-        <a
-          href="https://www.linkedin.com/in/shehryar-khan-196a6174"
-          target="_blank"
-          >linkedin.com/in/shehryar-khan-196a6174</a
-        >
-      </p>
-    </section>
+    <div class="container">
+      <section class="content-section">
+        <h2>Contact Information</h2>
+        <p>Phone: (832) 490-8607</p>
+        <p>
+          Email:
+          <a href="mailto:khanshehryar13@gmail.com">khanshehryar13@gmail.com</a>
+        </p>
+        <p>
+          LinkedIn:
+          <a
+            href="https://www.linkedin.com/in/shehryar-khan-196a6174"
+            target="_blank"
+            >linkedin.com/in/shehryar-khan-196a6174</a
+          >
+        </p>
+      </section>
 
-    <section class="content-section">
-      <h2>Summary</h2>
-      <p>
-        Results-driven Software Engineer with a background in software
-        development, API integration, and database management. Proficient in
-        coding, debugging, and system design with hands-on experience in Python,
-        JavaScript, SQL, and cloud-based technologies. Passionate about
-        leveraging DevOps methodologies, automation, and full-stack development
-        to create high-quality, scalable software solutions.
-      </p>
-    </section>
+      <section class="content-section">
+        <h2>Summary</h2>
+        <p>
+          Results-driven Software Engineer with a background in software
+          development, API integration, and database management. Proficient in
+          coding, debugging, and system design with hands-on experience in
+          Python, JavaScript, SQL, and cloud-based technologies. Passionate
+          about leveraging DevOps methodologies, automation, and full-stack
+          development to create high-quality, scalable software solutions.
+        </p>
+      </section>
 
-    <section class="content-section skills">
-      <h2>Skills</h2>
-      <ul>
-        <li>
-          <strong>Programming Languages:</strong> Python, JavaScript, SQL, HTML,
-          CSS
-        </li>
-        <li>
-          <strong>Software Development:</strong> API Integration, Full-Stack
-          Development, Microservices
-        </li>
-        <li><strong>Database Management:</strong> MySQL, PostgreSQL</li>
-        <li>
-          <strong>Testing & Debugging:</strong> Unit Testing, Debugging,
-          Automation Scripts
-        </li>
-        <li>
-          <strong>Tools & Frameworks:</strong> Anypoint Studio, Git, ERP Systems
-        </li>
-      </ul>
-    </section>
+      <section class="content-section skills">
+        <h2>Skills</h2>
+        <ul>
+          <li>
+            <strong>Programming Languages:</strong> Python, JavaScript, SQL,
+            HTML, CSS
+          </li>
+          <li>
+            <strong>Software Development:</strong> API Integration, Full-Stack
+            Development, Microservices
+          </li>
+          <li><strong>Database Management:</strong> MySQL, PostgreSQL</li>
+          <li>
+            <strong>Testing & Debugging:</strong> Unit Testing, Debugging,
+            Automation Scripts
+          </li>
+          <li>
+            <strong>Tools & Frameworks:</strong> Anypoint Studio, Git, ERP
+            Systems
+          </li>
+        </ul>
+      </section>
 
-    <section class="content-section experience">
-      <h2>Work Experience</h2>
-      <ul>
-        <li>
-          <strong>Account Coordinator</strong> – Houston, TX | May 2024 – Feb
-          2025
-          <ul>
-            <li>
-              Managed data-driven workflows, optimizing business processes
-              through automation.
-            </li>
-            <li>
-              Developed technical solutions to enhance system efficiency using
-              SQL and data analytics.
-            </li>
-            <li>
-              Coordinated with teams to ensure seamless software system
-              integration.
-            </li>
-          </ul>
-        </li>
-        <li>
-          <strong>Integration Intern</strong> – Systems Limited, Pakistan | Sep
-          2023 – Feb 2024
-          <ul>
-            <li>
-              Developed API-driven integration solutions using MySQL and RESTful
-              APIs.
-            </li>
-            <li>
-              Debugged and tested software components, improving system
-              reliability.
-            </li>
-            <li>
-              Collaborated with cross-functional teams to design and implement
-              scalable integration workflows.
-            </li>
-            <li>
-              Achieved MuleSoft Developer Level 1 certification for expertise in
-              enterprise integration.
-            </li>
-          </ul>
-        </li>
-        <li>
-          <strong>Hardline Team Lead</strong> – Walmart, Houston, TX | Oct 2021
-          – Feb 2025
-          <ul>
-            <li>Led 12+ employees, improving productivity & morale.</li>
-            <li>Implemented efficiency strategies & met deadlines.</li>
-          </ul>
-        </li>
-      </ul>
-    </section>
+      <section class="content-section experience">
+        <h2>Work Experience</h2>
+        <ul>
+          <li>
+            <strong>Account Coordinator</strong> – Houston, TX | May 2024 – Feb
+            2025
+            <ul>
+              <li>
+                Managed data-driven workflows, optimizing business processes
+                through automation.
+              </li>
+              <li>
+                Developed technical solutions to enhance system efficiency using
+                SQL and data analytics.
+              </li>
+              <li>
+                Coordinated with teams to ensure seamless software system
+                integration.
+              </li>
+            </ul>
+          </li>
+          <li>
+            <strong>Integration Intern</strong> – Systems Limited, Pakistan |
+            Sep 2023 – Feb 2024
+            <ul>
+              <li>
+                Developed API-driven integration solutions using MySQL and
+                RESTful APIs.
+              </li>
+              <li>
+                Debugged and tested software components, improving system
+                reliability.
+              </li>
+              <li>
+                Collaborated with cross-functional teams to design and implement
+                scalable integration workflows.
+              </li>
+              <li>
+                Achieved MuleSoft Developer Level 1 certification for expertise
+                in enterprise integration.
+              </li>
+            </ul>
+          </li>
+          <li>
+            <strong>Hardline Team Lead</strong> – Walmart, Houston, TX | Oct
+            2021 – Feb 2025
+            <ul>
+              <li>Led 12+ employees, improving productivity & morale.</li>
+              <li>Implemented efficiency strategies & met deadlines.</li>
+            </ul>
+          </li>
+        </ul>
+      </section>
 
-    <section class="content-section projects">
-      <h2>Academic Projects</h2>
-      <ul>
-        <li>
-          <strong>Pharmacy Management System</strong> – Wilmington University,
-          CSC 487 | April 2023
-          <ul>
-            <li>
-              Developed a JavaScript & MySQL-based pharmacy system for managing
-              inventory and sales.
-            </li>
-            <li>
-              Integrated a user-friendly front-end interface with optimized
-              database queries for fast transactions.
-            </li>
-          </ul>
-        </li>
-      </ul>
-    </section>
+      <section class="content-section projects">
+        <h2>Academic Projects</h2>
+        <ul>
+          <li>
+            <strong>Pharmacy Management System</strong> – Wilmington University,
+            CSC 487 | April 2023
+            <ul>
+              <li>
+                Developed a JavaScript & MySQL-based pharmacy system for
+                managing inventory and sales.
+              </li>
+              <li>
+                Integrated a user-friendly front-end interface with optimized
+                database queries for fast transactions.
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </section>
 
-    <section class="content-section education">
-      <h2>Education</h2>
-      <ul>
-        <li>
-          <strong>Bachelor of Computer Science</strong> – Wilmington University,
-          New Castle, Delaware | April 2023
-          <ul>
-            <li>Cumulative GPA: 3.67</li>
-            <li>
-              Dean’s List: Fall 2021, Spring 2022, Summer 2022, Spring 2023
-            </li>
-          </ul>
-        </li>
-      </ul>
-    </section>
+      <section class="content-section education">
+        <h2>Education</h2>
+        <ul>
+          <li>
+            <strong>Bachelor of Computer Science</strong> – Wilmington
+            University, New Castle, Delaware | April 2023
+            <ul>
+              <li>Cumulative GPA: 3.67</li>
+              <li>
+                Dean’s List: Fall 2021, Spring 2022, Summer 2022, Spring 2023
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </section>
+    </div>
 
     <footer>
       <p>&copy; 2025 Shehryar Khan | All rights reserved.</p>
